@@ -25,7 +25,7 @@ function checkAge(age){
 }
 
 function cube(num){
-    let result = num*num*num;
+    let result = Math.pow(num,3);
     return result;
 }
 
