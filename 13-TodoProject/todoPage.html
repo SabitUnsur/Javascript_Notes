@@ -7,7 +7,62 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
-    <title>İnput Eventlari</title>
+    <title>Todo App</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <style>
+        .card {
+            margin-top: 20px;
+        }
+
+        .card-header {
+            background-color: #f8f9fa;
+        }
+
+        .card-title {
+            margin-bottom: 0;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .delete-item {
+            color: red;
+            cursor: pointer;
+        }
+
+        .todo-icon {
+            margin-right: 10px;
+        }
+
+        .todo-clear-button {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .todo-clear-button:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+        .todo-clear-button i {
+            margin-right: 5px;
+        }
+
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -15,40 +70,40 @@
         <div class="row">
             <div class="card w-100 mt-3">
                 <div class="card-header">
-                    <h5 class="card-title">Todo List Sayfası </h5>
+                    <h5 class="card-title">Todo List Sayfası</h5>
                 </div>
                 <div class="card-body">
                     <form id="todoAddForm" class="mt-2">
                         <input type="text" class="form-control mt-2" id="todoName" aria-describedby="todo" placeholder="Todo Giriniz">
                     
-                 <button id="todoAddButton" type="submit"  class="btn btn-primary mt-4 btn-sm">
-                        Todo Ekleyin</button>
+                        <button id="todoAddButton" type="submit" class="btn btn-primary mt-4 btn-sm">Todo Ekleyin</button>
+                    </form>
 
-                </form>
+                    <hr>
+                </div>
 
                 <hr>
-
-            </div>
-
-                <hr/>
 
                 <div class="card-body">
                     <h5 class="card-title">Todo Listesi</h5>
                     <form name="form2" id="todoListForm">
                         <input id="todoSearch" type="text" class="form-control mt-3" placeholder="Todo Arayınız">
-                        <hr/>
+                        <hr>
                     </form>
 
                     <ul class="list-group">
-                        <!--
                         <li class="list-group-item d-flex justify-content-between">Todo 1
                             <a href="#" class="delete-item">
                                 <i class="fa fa-remove"></i>
                             </a>
                         </li>
-                      -->
-                      </ul>
-                      <a href="#"  id="todoClearButton"  class="btn btn-primary btn-sm mt-3">Tüm Todoları Temizle</a>
+                    </ul>
+
+                    <a href="#" id="todoClearButton" class="btn btn-danger btn-sm mt-4 todo-clear-button">
+                        <i class="fa fa-trash todo-icon"></i>
+                        Tüm Todoları Temizle
+                    </a>
+
                 </div>
             </div>
         </div>
