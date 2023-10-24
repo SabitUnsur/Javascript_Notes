@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
     <title>Todo App</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
@@ -76,7 +77,8 @@
                     <form id="todoAddForm" class="mt-2">
                         <input type="text" class="form-control mt-2" id="todoName" aria-describedby="todo" placeholder="Todo Giriniz">
                     
-                        <button id="todoAddButton" type="submit" class="btn btn-primary mt-4 btn-sm">Todo Ekleyin</button>
+                        <button id="todoAddButton" type="submit" class="btn btn-primary mt-3 btn-sm">
+                            <i class="fas fa-plus"></i> Todo Ekleyin </button>
                     </form>
 
                     <hr>
@@ -92,7 +94,7 @@
                     </form>
 
                     <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between">Todo 1
+                        <li class="list-group-item d-flex justify-content-between">Todo 
                             <a href="#" class="delete-item">
                                 <i class="fa fa-remove"></i>
                             </a>
