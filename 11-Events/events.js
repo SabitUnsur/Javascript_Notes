@@ -5,7 +5,7 @@ const clearButton = document.querySelector("#todoClearButton");
 
 clearButton.addEventListener("click",changeTitle);
 
-//metodu çalıştıran eventin bir objesi parametre olarak gecer.
+//metodu çalıştıran eventin bir objesi parametre olarak gecer. yani "click eventi parametre olarak gelir"
   function changeTitle(e){
     console.log(e.type);
     console.log(e.target);

@@ -29,7 +29,7 @@ function pageLoad(){
     });
 }
 
-function filter(e){ //targetı yakalayıp icidneki deger alinacagi zaman event parameter gec.
+function filter(e){ //targetı yakalayıp icindeki deger alinacagi zaman event parameter gec.
     const filterValue = e.target.value.toLowerCase().trim();
     const todoList = document.querySelectorAll(".list-group-item");
 
