@@ -25,3 +25,21 @@ class Matematik{
 const math = new Matematik();
 // math.topla(2,3); //hata
 Matematik.topla(2,3); //5
+
+
+//INHERITANCE
+
+class Person{
+    firstName  ="Sabit";
+    write(){
+        console.log("Person Write  : " + this.firstName);
+        console.log(super.write());
+    }
+}
+
+class Student extends Person{
+   write(){
+       //console.log("Student Write  : " + this.firstName);
+       super.write(); 
+   }
+}
