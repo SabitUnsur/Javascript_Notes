@@ -17,7 +17,7 @@
 //onreadystatechange : readyState degistiginde tetiklenir.
 
 // tarayici ----> AJAX ----> Sunucu
-//Eski bir yontemdir. Cok kullanilmaz. 
+//Eski bir yontemdir. Cok kullanilmaz. Y
 
 
 function prepareURL(url,id){
