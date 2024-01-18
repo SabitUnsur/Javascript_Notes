@@ -3,26 +3,25 @@
 //asenkron yapıyı senkron hale getirmek için kullanılır.
 
 
-function getName(callback){
+function getName(callback){ 
     setTimeout(() => {
         let name ="Sabit";
         callback(name); //sorun cozulmus olur.
     }, 1000);
 }
 
-function getSurname(name,callback){
+function getSurname(name,callback){ 
     setTimeout(() => {
         let surname = "Unsur"; // nameye gore soyismi buldu . 
         callback(surname);
     }, 500);
 }
 
-function getAge(name,surname,callback){
+function getAge(name,surname,callback){ 
     setTimeout(() => {
         let age = 25;
         callback(age);
     }, 300);
-
 }
 
 

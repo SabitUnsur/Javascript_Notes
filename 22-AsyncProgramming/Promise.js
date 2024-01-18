@@ -19,7 +19,7 @@ let check = true ;
 // console.log(promise1);
 
 //Asenkron yapıları senkron hale getirmek için promise kullanılır
-//Callbacklerin alternatifi olarak kullanılır
+//Callbacklerin alternatifi olarak kullanılır. 
 
 
 // function createPromise(){
@@ -90,10 +90,10 @@ function getCommentsByUserID(url){
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
        
-            xhr.addEventListener("readystatechange",() => {
+            xhr.addEventListener("readystatechange",() => { //readyState degistiginde tetiklenir.
                 try{
                     if(xhr.readyState === 4 && xhr.status === 200){
-                        resolve(JSON.parse(xhr.responseText));
+                        resolve(JSON.parse(xhr.responseText)); //responseText string olarak gelir. JSON.parse ile objeye ceviriyoruz.
                     }
                 }
                 catch(error){
@@ -101,8 +101,8 @@ function getCommentsByUserID(url){
                 }
             });
 
-        xhr.open("GET", url);
-        xhr.send();
+        xhr.open("GET", url); //istek olusturuldu.
+        xhr.send(); //istek gonderildi.
       
     });
 }
